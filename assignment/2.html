@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Advanced Critical Computation </title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="../style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="nav-container">
+      <div class="title" style="font-size: 24px">
+  <a href="../"> Adv. Critical Computation </a>
+      </div>
+      <div><a href="https://docs.google.com/document/d/1MHW4gKqAebGxtlj-LQ_BSc9FRSwSBS0zRttLsPj8EAE/edit#">syllabus</a></div>
+ 
+      <div><a href="../assignment/">assignments</a></div>
+      
+      <div><a href="../people/">people</a></div>
+      <div><a href="../faq/">faq</a></div>
+    </div>
+
+    <div class="main-container assignment">
+      <div id="sub-nav">
+        <ul>
+          <li><a href="1.html">#1 Interactive Typography</a></li>
+          <li><a href="2.html">#2 Experimental Camera</a></li>
+          <li><a href="3.html">#3 Handmade Websites</a></li>
+          <li><a href="4.html">#4 Digital Divination</a></li>
+          <!-- 
+          <li><a href="3.html">#3 Alt Interface</a></li>
+          <li><a href="4.html">#4 Digital Divination </a></li>
+          <li><a href="5.html">#5 Make Your Library </a></li> -->
+
+        </ul>
+      </div>
+      <div id="main-panel">
+          <h1>Project #2 Experimental Camera</h1>
+          <div class="full-width-box">
+            <img
+              style="width:60%;padding-right: 35%; height:auto;"
+              src="filter.png"
+            /><br>
+            <a style="width:100%; display: block;height:auto;" href="https://poccmag.com/filter-artists-making-their-mark-on-the-new-creative-frontier/"
+              >Filter Artists Making Their Mark on The New Creative Frontier</a
+            >
+          </div>
+
+            
+      
+    
+          <h2>Description</h2>
+    
+          <p>
+            How can camera filters change the way we perceive ourselves and the
+            others? <br />
+            <br />
+    
+            You'll be looking back at your consentful interface/experimental camera from Crticial Computation as a starting point for project #2. For this assignment, you will integrate your own <a href="https://teachablemachine.withgoogle.com/">Teachable Machine model</a> to create a camera filter for a specific context. <a href="https://twitter.com/cameronhunter/status/1305667539922550784">For example, your idea might be to build a zoom filter that translates certain gestures into easy-to-read text</a>. <a href='https://www.instagram.com/ar/446108235955634/'>Or you might build a camera filter that superimposes and celebrates face jewelry that is from your culture.</a> Whatever your idea is, be intentional and thoughtful about how you will integrate Teachable Machine into your sketch. In addition to using Teachable Machine, you will also be improving/re-designing the interface of your camera. Really think carefully about typography, sequence, and the user experience. Test your camera out with friends or strangers to help you understand potential pitfalls in your interface. Where do people get stuck or confused? How can you make things as clear and accessible as possible? And finally, you will be thinking a little more strategically about your code organization. For example, try to compartmentalize your logic using user-defined functions and/or classes. If your draw() function is getting very long, chances are you can move some of the logic out into it's own function or class. 
+          </p>
+    
+          <h2>Required Readings</h2>
+          <p>
+            (1)
+            <a href="https://beyondresolution.info/behind-white-shadows"
+              >Behind White Shadows</a
+            >, Rosa Menkman<br />
+          </p>
+    
+          <h2>
+            Further Readings
+          </h2>
+          <p>
+            (1)
+            <a
+              href="https://medium.com/@Alibaba_Cloud/image-recognition-using-edge-detection-44bd3dc4caa"
+              >Image Recognition Using Edge Detection</a
+            >, Alibaba Cloud
+            <br />
+            (2)
+            <a
+              href="https://www.independent.co.uk/life-style/gadgets-and-tech/news/iphone-x-8-apple-features-face-id-a7944646.html"
+              >iPhone X Facial Recognition: How Apple's New Face ID Actually
+              Works</a
+            >, Andrew Griffin<br />
+            (3)
+            <a 
+              href="https://tankmagazine.com/tank/2019/04/the-social-photo/"
+              >The Social Photo</a>, Nathan Jurgenson<br/>
+            (4)
+            <a
+             href="https://www.youtube.com/watch?v=d16LNHIEJzs"
+              >Color film was built for white people. Here's what it did to dark skin.</a
+              >, Vox <br/>
+            (5) <a href="https://www.ted.com/talks/joy_buolamwini_how_i_m_fighting_bias_in_algorithms/transcript">How I'm Fighting Bias in Algorithms</a> and <a href="http://gendershades.org/">Gender Shades</a>, Joy Buolamwini
+          </p>
+          <h2>References</h2>
+          <p>
+            (1)
+            <a href="https://www.youtube.com/watch?v=9z9mbiOZqSs&ab_channel=TheCodingTrain">Use your p5js sketches as Zoom filters!!</a>
+            (2)
+            <a href="http://www.katehollenbach.com/user-is-present/"
+              >User is Present</a
+            >
+            , Kate Hollenbach
+            <br />
+            (3)
+            <a href="https://cyberwitch666.github.io/Gaze-Makes-The-Glitch/"
+              >Gaze Makes the Glitch</a
+            >, Cyber Witch
+            <br />
+            (4)
+            <a href="https://shrub.ooo/">Shrub</a>, Linked by Air & Jeffrey Scudder
+            <br />
+            (5)
+            <a href="https://zachblas.info/works/facial-weaponization-suite/"
+              >Facial Weaponization Suite</a
+            >, Zach Blas
+            <br />
+            (6)
+            <a href="https://adamferriss.com/merge/">Merge</a> /
+            <a href="https://adamferriss.com/multix/">Multix</a> /
+            <a href="https://www.adamferriss.com/sheeting/">Sheets</a> /
+            <a href="https://www.adamferriss.com/gush/">Gush</a>, Adam Ferriss
+            <br />
+            (7) <a href="https://glanceback.info/">Glance Back</a>, Maya Man
+            <br/>
+            (8) <a href="https://experiments.withgoogle.com/collection/ar">AR Experiments</a>, multiple creators
+          </p>
+    
+          <h2>Resources</h2>
+          <p>
+            (1)
+            <a
+              href="https://codeburst.io/instagram-filters-with-javascript-p5-js-83f28c9f7fda"
+              >Instagram Filters with p5.js</a
+            >, Kelly Lougheed
+            <br />
+    
+            (2)
+            <a href="https://github.com/processing/p5.js/wiki/Beyond-the-canvas"
+              >Beyond the Canvas</a
+            >, Evelyn Masso
+            <br />
+            (3)
+    
+            <a
+              href="https://www.youtube.com/watch?v=0V3uYA1hafk&list=PLRqwX-V7Uu6aKKsDHZdDvN6oCJ2hRY_Ig&index=6"
+              >Video and Pixels Playlist</a
+            >, Coding Train
+    
+            <br />
+            (4) <a
+                href="https://creative-coding.decontextualize.com/video/"
+                >Working with p5 & Video</a>, Decontextualize<br/>
+            (5)
+            <a href="https://gist.github.com/lmccart/2273a047874939ad8ad1"
+              >Creating face filters with clmtrackr.js + p5.js</a
+            >, Lauren McCarthy <br />
+            (6)
+            <a href="https://kylemcdonald.github.io/cv-examples/"
+              >Computer vision examples</a
+            >, Kyle McDonald
+            <br />
+            (7)
+            <a href="https://www.auduno.com/clmtrackr/docs/reference.html"
+              >clmtrackr.js References</a
+            >, Audun Mathias Øygard
+            <br />
+            (8)
+            <a href="https://itp-xstory.github.io/p5js-shaders/#/"
+              >p5.js Shaders Tutorial</a
+            >, Casey Conchinha and Louise Lessél
+            <br />
+            (9)
+            <a href="https://www.nautilists.com/lists/JNI1oOq6ce"
+              >Pixel Manipulation with p5.js: Build your own video mirror!</a
+            >, jiwon
+          </p>
+          <h2>Timeline & Deliverables</h2>
+          <p>
+            Feb 17 | Feb 18: Submit your in-progress prototype to your class Discord and a written paragraph of your idea and how it addresses the following:  How will your sketch improve on the interface design? How will your code be more organized/structured? How will you integrate Teachable Machine in a way that supports your concept?
+            <br />
+            Feb 24 | Feb 25: Submit documentation of your pair programming meeting to discord -- this can be a written summary of what you did together and if you are comfortable, a selfie :)
+            <br />
+            Mar 3 | Mar 4: Project due, present during class.
+          </p>
+    
+          <h2>Submission Guidelines</h2>
+          <p>
+            <br />
+            Submit your finalized glitch portfolio page to Canvas
+          </p>
+    
+          <h2>Design Constraints</h2>
+          <p>
+            (1) Your canvas size should be windowWidth * windowHeight <br />
+            (2) Your project should use User-defined functions and/or classes<br />
+            (3) Your project should use Teachable Machine<br />
+          </p>
+    
+          <h1>Study Guide</h1>
+    
+          <h2>
+            Table of Content
+          </h2>
+          <p>
+            (1) <a href="#teachablemachine">Teachable Machine</a><br />
+            (2) <a href="#dom">Interacting with the DOM</a><br />
+            (3) <a href="#clm">clmtrkr.js</a><br />
+            (4) <a href="#cg">createGraphic()</a><br />
+            (5) <a href="#copy">copy()</a><br />
+            (6) <a href="#setget">set() and get()</a><br />
+            (7) <a href="#pixel">loadPixels() and updatePixels()</a><br />
+            (8) <a href="#perf">Performance Management</a><br />
+          </p>
+          <div id="teachablemachine">
+            <h2>Teachable Machine</h2></div>
+            <p>How to train a model and load your model into p5js</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/kwcillcWOg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Snake Game with Teachable Machine</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UPgxnGC8oBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>How to use your p5 sketch as a Zoom filter with <a href="https://obsproject.com/">OBS</a></p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/9z9mbiOZqSs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>bonus: teachable machine with sound classification</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TOrVsLklltM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          
+
+          <div id="dom"><h2>Interacting with the DOM</h2></div>
+    
+          <p>
+            Whenever a web page is loaded, the browser creates a Document Object
+            Model (DOM) for the loaded page. DOM arranges all the elements on the
+            web page into a tree diagram &mdash;
+          </p>
+          <div class="full-width-box">
+            <img src="https://www.w3schools.com/js/pic_htmltree.gif" />
+          </div>
+          <p>
+            And the amazing part is, we can interact with the elements on this tree
+            diagram from our sketch.js in the p5 editor! If you visit the p5
+            refrence's
+            <a href="https://p5js.org/reference/#group-DOM">DOM section</a>, you
+            will find a number of DOM elements that are ready to be loaded into your
+            sketch. Elements that are relevant to this project are:
+          </p>
+    
+          <li class="bullet">
+            <a href="https://p5js.org/reference/#/p5/createCapture"
+              >createCapture()</a
+            >
+          </li>
+          <li class="bullet">
+            <a href="https://p5js.org/reference/#/p5/createButton"
+              >createButton()</a
+            >
+          </li>
+          <li class="bullet">
+            <a href="https://p5js.org/reference/#/p5/createSlider"
+              >createSlider()</a
+            >
+          </li>
+          <li class="bullet">
+            <a href="https://p5js.org/reference/#/p5/createRadio">createRadio()</a>
+          </li>
+          <li class="bullet">
+            <a href="https://p5js.org/reference/#/p5/createSelect"
+              >createSelect()</a
+            >
+          </li>
+          <li class="bullet">
+            <a href="https://p5js.org/reference/#/p5/createCheckbox"
+              >createCheckbox()</a
+            >
+          </li>
+          <li class="bullet">
+            <a href="https://p5js.org/reference/#/p5/createColorPicker"
+              >createColorPicker()</a
+            >
+          </li>
+    
+          <h3>
+            createCapture()
+          </h3>
+    
+          <p>
+            The most important DOM element we need for Project #4 is
+            <a href="https://p5js.org/reference/#/p5/createCapture"
+              >createCapture()</a
+            >. Essentially createCapture() lets you access the user's webcam through
+            the browser. The code to load the webcam is very simple, however it is
+            important to remember that you should put createCapture() inside
+            setup(). Putting it in draw() will create a new capture every frame and
+            crash the program!
+          </p>
+
+          <script src="https://gist.github.com/xinemata/93810659cf3e1086de3bfd46a8f52db8.js"></script>
+ 
+          <p>
+            When you hit play, your browser should ask for your permission to access
+            your web cam. Once you accept it, you should see your image stacked
+            below the p5 canvas.
+          </p>
+          <p>
+            Web cam is a highly sensitive device that comes along with layers of
+            security measures. We wouldn't normally want any website to just turn on
+            our webcam without asking for our consent. If your web cam isn't turning
+            on inside the browser, a lot of times it's because you need to go into
+            your browser setting and give permission to specific websites to access
+            the web cam. This is true for both laptops and mobile devices. The
+            sercurity measurements on mobile devices tend to be stricter than
+            laptops, and iOS tends to be stricter than Androids.
+          </p>
+    
+          <p>
+            Next, let's make the video feed appear inside of our canvas instead of
+            below. In order to do that, we can actually feed the
+            <i>capture</i> variable directly into the
+            <a href="https://p5js.org/reference/#/p5/image">image function</a>. And
+            just for fun, I'm also going to use one of the p5
+            <a href="https://p5js.org/reference/#/p5/filter">filter functions</a> to
+            invert the video feed:
+          </p>
+    
+          <script src="https://gist.github.com/xinemata/9898136c4174e84ce07caff46d7b1818.js"></script>
+    
+          <p>
+            By now you should see two video feeds, one inverted and one normal. You
+            are well on the way of creating an experimental camera! Next let's hide
+            the lower video feed that's automatically generated by createCapture():
+          </p>
+    
+          <script src="https://gist.github.com/xinemata/9b6ca8e6ec2e5dc39353c4cb64e5ca2c.js"></script>
+    
+          <h3>
+            createButton() + saveCanvas()
+          </h3>
+    
+          <div id="p5pos">
+            <script src="basicCam.js"></script>
+          </div>
+          <p>&#8627; click on button to take a picture :)</p>
+    
+          <p>
+            In this section, we will combine another DOM element
+            <a href="https://p5js.org/reference/#/p5/createButton"
+              >createButton()</a
+            >
+            and p5 function
+            <a href="https://p5js.org/reference/#/p5/saveCanvas">saveCanvas()</a> to
+            take a screenshot from the webcam and save it to your local device.
+            Let's start from adding a button to the program. And let's also create a
+            custom function that will execute when the button gets clicked on:
+          </p>
+          <script src="https://gist.github.com/xinemata/9a5725436ccb7abfbd2628f856763c60.js"></script>
+    
+          <p>
+            Now whenver you click on the button, the string "you took a picture"
+            should be printed in your console. If you're feeling lost, it might help
+            to check out a different example
+            <a href="https://code-2.glitch.me/p3.html#input">here</a>.
+          </p>
+    
+          <p>
+            The next thing we have to do is to intergrate savaCanvas() into the
+            program, so that everytime the button is clicked, the progam would save
+            a photo to the computer. The syntax for saveCanvas() is:
+          </p>
+    
+          <h5>saveCanvas(selectedCanvas, [filename], [extension])</h5>
+    
+          <p>
+            We want saveCanvas() to execute when the button is clicked, so we should
+            put it inside <i>takePic()</i>. And we can also create a variable to
+            store createCanvas() in:
+          </p>
+          <script src="https://gist.github.com/xinemata/11f574cca8e52c7f67ed1028d364f741.js"></script>
+    
+          <p>
+            Now try to click on the button. If your browser downloads an image, then
+            hooray! You've just created a camera and took the first photo of
+            yourself! Your camera should work if you open the sketch on an Android
+            device. If you'd like your camera to work on iOS 11 devices as well,
+            here's an additional line of code you need to add inside your setup():
+          </p>
+          <script src="https://gist.github.com/xinemata/c0c7ae0997a3165e671ede0afbd4554c.js"></script>
+          <a href="https://editor.p5js.org/xinxin/sketches/G6BDhWrW"
+            >Link to Source Code</a
+          >
+          <p>
+            Note: working on camera software across different devices is a constant
+            struggle, because software on those devices are constantly updating.
+            Remember when your software stopped working after you've updated your
+            operating system? This is a similar issue. Just keep in mind that this
+            struggle is a completely normal. It's part of what it means to code.
+            When I encounter weird problems like this in p5, the first place I go to
+            find my answers is
+            <a href="https://github.com/processing/p5.js/issues/2847"
+              >p5's github issues</a
+            >.
+          </p>
+    
+          <div id="clm"><h2>clmtrkr.js</h2></div>
+    
+          <p>
+            Many of you are curious about exploring facial recognition for this
+            project, so I'm adding a chapter on
+            <a href="https://github.com/auduno/clmtrackr">clmtrkr.js</a>, a
+            JavaScript library that can be easily intergrated into p5.js. You can
+            use it to create AR face filters, analyze facial expressions, or even
+            <a
+              href="https://yp.scmp.com/article/115418/10-instagram-secret-filter-games-play-right-now"
+              >use your face as an input to play a game</a
+            >.
+          </p>
+    
+          <p>
+            This might sound complicated, but the good news is the mechanism
+            actually works very similarly to the textToPoints() function we've
+            already worked with in Project #2. Instead of translating text into an
+            array of x and y, clmtrkr.js helps translating our facial contour into a
+            sequence of points &mdash;
+          </p>
+    
+          <div class="full-width-box">
+            <img src="https://www.auduno.com/images/annotated2_small.jpg" />
+            <img
+              src="https://www.auduno.com/clmtrackr/docs/media/facemodel_numbering_new_small.png"
+            />
+          </div>
+    
+          <p>
+            What's convenient is that clmtrkr will always generate a total of 70
+            points around the face, so if you want to draw something on the tip of
+            the nose it will always be point 62, the left eye and the right eye will
+            always be point 27 and 32.
+          </p>
+    
+          <p>
+            If you want to learn more about how clmtrkr works behind the scene, I'd
+            recommend checking out this
+            <a href="https://www.auduno.com/2014/01/05/fitting-faces/">blog post</a
+            >.
+          </p>
+    
+          <h3>
+            Setting up clmtrkr.js in the p5 Editor
+          </h3>
+    
+          <p>
+            Let's use this
+            <a href="https://editor.p5js.org/xinxin/sketches/EDqEwgAul"
+              >code template</a
+            >
+            as a starting point. It includes what we've gone through in the
+            createCapture() section above. To add the clmtrkr.js library into your
+            p5 sketch, you'd want to open your index.html page and insert the
+            library before your p5 library:
+          </p>
+    
+          <script src="https://gist.github.com/xinemata/e91b73dcc33c6d24525ee1f27a7bcffa.js"></script>
+    
+          <p>
+            Next let's open sketch.js and create a global variable
+            <i>let tracker</i> at the top of the sketch. And let's also add line
+            12~14 from the code example below into your setup(). I will give a brief
+            explanation of what each of those lines does next to the code, but if
+            you want to dig deeper please check out clmtrkr's
+            <a href="https://www.auduno.com/clmtrackr/docs/reference.html"
+              >reference page</a
+            >.
+          </p>
+    
+          <script src="https://gist.github.com/xinemata/3a647090fe1d682ebde4d040b7fc3831.js"></script>
+    
+          <p>
+            You've initated the clmtrackr object, but nothing is happening on the
+            screen yet. Let's add this important line in draw() so that the tracking
+            points will be continuously updated when the program runs.
+          </p>
+    
+          <script src="https://gist.github.com/xinemata/f4ebf46ababda6acfb4a2483fa87da03.js"></script>
+    
+          <p>
+            Now all the tracking points would be stored inside <i>positions</i>.
+            Next, let's add the block of code below into draw(). Using beginShape()
+            and endShape(), we can connect all the tracking points together to draw
+            and outline of the face!
+          </p>
+          <script src="https://gist.github.com/xinemata/2eab5fe6150eff7002aefc372e2d54a8.js"></script>
+          <a href="https://editor.p5js.org/xinxin/sketches/-gbq9sNsC"
+            >Source Code</a
+          >
+    
+          <p>
+            Now keep your face in the center of frame and make sure that your face
+            is fairly well lit. If you see an overlayed white outline around your
+            face, then congrats! You've got a basic facial recognition system in
+            your p5 sketch.
+          </p>
+          <div class="full-width-box">
+            <img
+              style="height:200px"
+              src="https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2FScreen%20Shot%202020-04-04%20at%204.00.14%20PM.png?v=1586030463124"
+            />
+          </div>
+          <p>
+            Now, we've entered an uncharted territory here. What's actually inside
+            <i>positions</i>? What is the two-bracket business in
+            <i>positions[i][0]</i> and <i>positions[i][1]</i> all about? Hum, let's
+            print <i>positions</i> in draw() to take a peak at what's inside the
+            variable:
+          </p>
+          <script src="https://gist.github.com/xinemata/a1ab72f59df25c454de0c030d7cba363.js"></script>
+          <p>
+            When you hit play, you should see something like this inside your
+            console:
+          </p>
+          <div class="full-width-box">
+            <img
+              style="height:200px"
+              src="https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2FScreen%20Shot%202020-04-04%20at%201.56.40%20PM.png?v=1586026141160"
+            />
+          </div>
+          <p>
+            And if you stop the sketch and click on the tiny arrow in front of each
+            print, you should be able to look inside of the structure and see
+            something like this:
+          </p>
+          <div class="full-width-box">
+            <img
+              style="height:200px"
+              src="https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2FScreen%20Shot%202020-04-04%20at%202.48.29%20PM.png?v=1586026141066"
+            />
+          </div>
+    
+          <p>
+            This is a new data structure that we haven't talked about in this class.
+            It's got a fancy name &mdash; the two-dimensional array.
+          </p>
+    
+          <h3>
+            Two-Dimensional Array
+          </h3>
+    
+          <p>
+            So far we have mostly been working with one-dimensional array. If we
+            compare writing an array to making a list, the list version of
+            <i>let groceries = [“pasta”, “dumplings”, “bread”]</i> would look like
+            this
+          </p>
+    
+          <ol>
+            <li style="list-style-type: decimal">Pasta</li>
+            <li style="list-style-type: decimal">Dumpling</li>
+            <li style="list-style-type: decimal">Bread</li>
+          </ol>
+    
+          <p>
+            However, if I really shop for those groceries in real life, I'd probably
+            need to create a sublist under every food item, detailing what
+            ingredients I need. And this is what two-dimensional array allows us to
+            do &mdash; we can add an additional sublist to an exisiting list.
+            Essentially, tw-dimensional array is an array of an array; a list of a
+            list.
+          </p>
+    
+          <ol>
+            <li style="list-style-type: decimal; font-weight: bold;">Pasta</li>
+            <ol>
+              <li style="list-style-type: lower-alpha;">Tomato</li>
+              <li style="list-style-type: lower-alpha;">Basil</li>
+              <li style="list-style-type: lower-alpha;">Spaghetti</li>
+            </ol>
+            <li style="list-style-type: decimal; font-weight: bold;">Dumpling</li>
+            <ol>
+              <li style="list-style-type: lower-alpha;">Dumpling wrapper</li>
+              <li style="list-style-type: lower-alpha;">Cabbage</li>
+              <li style="list-style-type: lower-alpha;">Ground pork</li>
+            </ol>
+            <li style="list-style-type: decimal; font-weight: bold;">Bread</li>
+            <ol>
+              <li style="list-style-type: lower-alpha;">Flour</li>
+              <li style="list-style-type: lower-alpha;">Yeast</li>
+            </ol>
+          </ol>
+    
+          <p>
+            Let's apply these concepts to p5. If I were to create a pizza ordering
+            progarm that lets my customers choose their own toppings using a
+            one-dimensional array, it would look like this:
+          </p>
+    
+          <script src="https://gist.github.com/xinemata/0b7784cc40a1bdbadd496937b8d7538f.js"></script>
+    
+          <p>
+            And in a two-dimensional array it would look like this:
+          </p>
+    
+          <script src="https://gist.github.com/xinemata/d932dff09f751b807477c0636bdac340.js"></script>
+    
+          <p>
+            I've snuck in a neat trick, <i>console.table()</i> in the code. Hit play
+            and see a surprise in the console :)
+          </p>
+    
+          <p>
+            Most importantly, how do we order a specific pizza topping from
+            <i>array2D</i>? If you'd like to order a plain bread, you would type
+            this into the program:
+          </p>
+    
+          <script src="https://gist.github.com/xinemata/f8ce75047435a7f47be10d9af72be242.js"></script>
+          <p>
+            Now here's a coding challenge for you &mdash; make the console print out
+            "I'd like a pizza with whole wheat bread, red sauce, mushrooms with
+            mozzarella and goat cheese". If you get stuck, check out the answer
+            <a href="https://editor.p5js.org/xinxin/sketches/w2axyYNwY">here</a>.
+          </p>
+    
+          <h3>
+            Adding AR Overlay
+          </h3>
+    
+          <p>
+            Finally, let's return to looking at the two-dimensional arrays inside
+            the
+            <a href="https://editor.p5js.org/xinxin/sketches/-gbq9sNsC"
+              >clmtrackr exmple</a
+            >. It turns out that under every tracking point, there is an [x, y]
+            array that store the x and y values of each tracking point. By writing
+            <i>positions[62][0]</i> we get to access the x value of tracking point
+            number 62, and by writing <i>positions[62][1]</i> we access the y value.
+          </p>
+    
+          <p>
+            Knowing this, let try something fun by adding this block of code to the
+            clmtrackr example inside draw():
+          </p>
+    
+          <script src="https://gist.github.com/xinemata/191bb94a848505f2ca3542557453d331.js"></script>
+    
+          <p>
+            If you see a circle popping up in front of your nose, hooray!
+          </p>
+          <p>
+            You might ask why we need to add an IF statement that checks whether
+            <i>positions.length</i> is larger than 0. If you try to comment that out
+            you will get an immediate error when the program starts. The reason for
+            this is because it takes a second for the program to register your face.
+            Without the IF statement, the program would try to access the
+            <i>positions</i> data without actually having the data, causing the
+            program to crash.
+          </p>
+    
+          <p>
+            For the sake of organization, the next thing we could do now is to add
+            dots and numbers to the sketch to show where each tracking points are on
+            the screen.
+          </p>
+    
+          <script src="https://gist.github.com/xinemata/9a38b95112cdc029de067953390672e1.js"></script>
+    
+          <a href="https://editor.p5js.org/xinxin/sketches/6CKO4zr56"
+            >Source Code</a
+          >
+    
+          <h3>
+            Facial Expression Analysis
+          </h3>
+          <div class="full-width-box">
+            <img
+              style="height:500px"
+              src="https://static01.nyt.com/images/2018/07/18/lens/18spy10/18spy10-superJumbo.jpg?quality=90&auto=webp"
+            />
+          </div>
+          <p>
+            &#8627; A detail of “Machine Readable Hito,” 2017. Trevor Paglen / Metro
+            Pictures, New York
+          </p>
+          <p>
+            While facial recognition software is mostly used as a
+            <a
+              href="https://www.vice.com/en_us/article/d3a7ym/trump-didnt-create-our-face-recognition-nightmare-hes-just-expanding-it"
+              >discriminatory</a
+            >
+            and
+            <a href="https://www.eff.org/pages/face-recognition">surveillance</a>
+            tool, artists and designers should feel empowered to use it in ways that
+            is
+            <a
+              href="https://www.nytimes.com/2018/07/18/lens/what-do-facial-recognition-technologies-mean-for-our-privacy.html"
+              >critical</a
+            >
+            and
+            <a
+              href="https://medium.com/@zachlieberman/m%C3%A1s-que-la-cara-overview-48331a0202c0"
+              >expressive</a
+            >. It's our responsibility to work with a problematic tool with
+            thoughtfulness and intentionality.
+          </p>
+    
+          <p>
+            Here's an example of how you would analyze someone's smile &mdash; add
+            this block of code into your existing clmtrakr sketch:
+          </p>
+    
+          <script src="https://gist.github.com/xinemata/dc4567a2d54bddb786df6b6f8e454b34.js"></script>
+          <a href="https://editor.p5js.org/xinxin/sketches/FQRpSS-23"
+            >Source Code</a
+          >
+    
+          <p>
+            If you try out the sketch, you'd see that this idea of "emotional
+            analysis" is actually extremely superficial. Essentially, you are just
+            comparing the distance and relationship between two or more tracking
+            points on the face. Try adding your own feature, such as making the bar
+            grow if your eyebrow raises. Once you get comfortable with adding your
+            own features, try to find creative and surprising ways to work with the
+            technique.
+          </p>
+    
+          <div id="cg"><h2>createGraphics()</h2></div>
+    
+          <p>
+            Remember when you first learned about the background() function in p5,
+            and you had to choose between leaving a trail of ellipses on the screen
+            when you moved your mouse around versus clearing the background and
+            leaving only one ellipse on the screen? Well, those days are officially
+            over &mdash;
+            <a href="https://p5js.org/reference/#/p5/createGraphics"
+              >createGraphics()</a
+            >
+            give you the ability create multiple layers on top of your canvas. You
+            could do things such as assigning a background() to the bottom layer and
+            no background for the top layer; or cut part of a layer and paste it
+            onto a new layer. This is pretty much the closest to Photoshop we're
+            ever going to get in p5.js!
+          </p>
+    
+          <div class="full-width-box">
+            <img style="height:100px" src="https://i.imgur.com/34MoKlQ.png" />
+          </div>
+          <p>
+            Just like createCanvas(), createGraphics() is a
+            <a href="https://p5js.org/reference/#/p5.Element">p5.elements</a> that
+            is usually initiated in setup():
+          </p>
+    
+          <script src="https://gist.github.com/xinemata/f0e9d26655c32fb9bd7299b402abb4a2.js"></script>
+          <p>
+            The line <i>layer1.ellipse(mouseX, mouseY, 25, 25)</i> assigns
+            <i>ellipse()</i> as a child of <i>layer1</i>. There are many other p5
+            functions that could be assigned as children of the layers, check out
+            the source code for the sketch below to see a more complete version of
+            my drawing program &mdash;
+          </p>
+    
+          <iframe src="https://editor.p5js.org/xinxin/embed/7RQIl3W7S"></iframe>
+          <p>&#8627; hold your mouse down to draw</p>
+    
+          <a href="https://editor.p5js.org/xinxin/sketches/7RQIl3W7S"
+            >Source Code</a
+          >
+    
+          <p>
+            Now, if we combine createGraphics() with createCapture(), we could come
+            up with many wonderful ideas for our experimental camera. For instance,
+            I could
+            <a href="https://editor.p5js.org/xinxin/sketches/qouzSxCGK"
+              >draw a picture with my nose</a
+            >!
+          </p>
+    
+          <div id="copy"><h2>copy()</h2></div>
+    
+          <p>
+            <a href="https://p5js.org/reference/#/p5/copy">copy()</a> is a p5
+            function that lets you copy and paste a specific region of the canvas.
+            Like the good ol' days of Photoshop. This is the syntax for copy():
+          </p>
+          <h5>
+            copy(srcImage, sx, sy, sw, sh, dx, dy, dw, dh)
+          </h5>
+          <p>
+            As you can see, there are nine parameters inside the copy function! This
+            may seem daunting at first, but once you understand what each of them do
+            it is actually pretty straight forward. Let's break them down one by
+            one:
+          </p>
+          <ul>
+            <li>
+              (1) srcImage: source image. This can be an image you upload, or an
+              image generated by createImage(), createGraphics(), or createCapture()
+            </li>
+            <li>(2) sx: source image's x coordinate</li>
+            <li>(3) sy: source image's y coordinate</li>
+            <li>(4) sw: source image width</li>
+            <li>(5) sh: source image height</li>
+            <li>(6) dx: destination image's x coordinate</li>
+            <li>(7) dy: destination image's y coordinate</li>
+            <li>(8) dw: destination image width</li>
+            <li>(9) dh: destination image height</li>
+          </ul>
+    
+          <p>
+            Now let's put it into practice. Download this
+            <a
+              href="https://cdn.glitch.com/5dd99b18-3ebb-45c5-90fb-b4b67dc2e128%2F1_7MmkjYFuzatsK66uNfGGzQ.jpg?v=1586270002891"
+              >seaside photo</a
+            >
+            and upload it to your p5 sketch. Here's a
+            <a href="https://p5js.org/reference/#/p5/image">reminder</a> for
+            displaying an uploaded image in your editor.
+          </p>
+    
+          <p>
+            The goal we have here is to copy the goats from the original image and
+            paste it to a different location on the canvas. In the example below, I
+            have copied two goats for you. Could you try to copy a different goat?
+          </p>
+    
+          <div class="full-width-box">
+            <iframe src="https://editor.p5js.org/xinxin/embed/Bc7HB0VKK"></iframe>
+          </div>
+          <div class="full-width-box">
+            <script src="https://gist.github.com/xinemata/a9f6a60d8fbd5c5cd1353eeef4e7157d.js"></script>
+          </div>
+          <a href="https://editor.p5js.org/xinxin/sketches/Bc7HB0VKK"
+            >Source Code</a
+          >
+    
+          <p>
+            Once you've done it yourself, you might notice that even though our
+            canvas is at 400px by 400px, we might need to set our source X and
+            source Y above 400. Do you have an idea for why that may be?
+          </p>
+    
+          <p>
+            Tips: you could use
+            <a href="https://p5js.org/reference/#/p5/imageMode">imageMode()</a> to
+            let the progam know whether to treat the CENTER or the UPPER LEFT of the
+            image as (0,0).
+          </p>
+    
+          <h3>
+            Make a Pixelator
+          </h3>
+    
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube-nocookie.com/embed/ENf9MXDj4hs"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+    
+          <p>
+            Now that we know how copy() works, let's combine it with createCapture()
+            and make a real-time pixelator!
+          </p>
+    
+          <p>
+            Pixelation happens when a raster image is enlarged to the point where
+            individual pixels are revealed, resulting in blurriness and fuzziness in
+            the image. Based on this principle, we can stretch and displace regions
+            of an image to create a pixelated effect. We will use a nested for loop
+            to copy a grid from the source image and paste the grid onto the canvas.
+          </p>
+    
+          <script src="https://gist.github.com/xinemata/24a0c19a36382162754670473cf99314.js"></script>
+          <a href="https://editor.p5js.org/xinxin/sketches/62FPCIYeN"
+            >Source Code</a
+          >
+          <p>
+            Once you feel comfortable with the pixelator tutorial, check out this
+            <a href="https://editor.p5js.org/xinxin/sketches/8HR7jS5Y">example</a>
+            that creates a swaying effect by combining the technique with a sine
+            wave.
+          </p>
+    
+          <div id="setget">
+            <h2>
+              set() and get()
+            </h2>
+          </div>
+    
+          <p>
+            <a href="https://p5js.org/reference/#/p5/set">set()</a> and
+            <a href="https://p5js.org/reference/#/p5/get">get()</a> are easy-to-use
+            functions that let you directly interact with the pixels on your canvas.
+            set() lets you write pixels to the canvas and get() lets you read
+            pixels() from the canvas.
+          </p>
+    
+          <h5>
+            set(x, y, c)
+          </h5>
+    
+          <p>
+            In order to use set(), you would need to specify which x, y positions
+            you would like to place the pixel in, and what color you would like the
+            pixel to use.
+          </p>
+    
+          <h5>
+            get(x, y)
+          </h5>
+    
+          <p>
+            In order to use get() you first need to make sure that the canvas isn't
+            empty. Specify the x and y of the pixel you would like to read, and a
+            color value will return which you could use for something else in your
+            sketch.
+          </p>
+    
+          <h3>
+            What's Inside a Pixel?
+          </h3>
+    
+          <div class="full-width-box">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Pixel_geometry_01_Pengo.jpg"
+            />
+          </div>
+          <p>
+            A <a href="https://www.youtube.com/watch?v=m8c1CAT2zEI">pixel</a> is the
+            smallest element in a digital image. Every pixel on your screen contains
+            an array of [R, G, B, A]. R stands for red, G stands for green, B stands
+            for blue, and A stands for the alpha channel, which controls opacity.
+            Let's write a few lines of code so that we could read the array of a
+            pixel in our console:
+          </p>
+    
+          <script src="https://gist.github.com/xinemata/2efbfb6b2861ea531de832458155b0dc.js"></script>
+    
+          <p>
+            If you print <i>c</i> into the console, you would see an array of four
+            different values, each representing the R, G, B, and Alpha channel of
+            the single pixel that is right underneath the tip of the cursor. Since
+            we've set the background to green, getting the pixel at any part of the
+            canvas is going to give us a reading of <i>[0, 255, 0, 255]</i>.
+          </p>
+    
+          <p>
+            Let's move forward to a more nuanced example using the seaside photo as
+            the background. I'm using set() to display the image in draw(). And I'm
+            also using <i>mouseX</i> and <i>mouseY</i> as the x and y values in
+            get(), so that when you hover over the screen, you would see the color
+            of the pixel you're hovering over displayed inside the square &mdash;
+          </p>
+    
+          <iframe src="https://editor.p5js.org/xinxin/embed/RkoemCNwi"></iframe>
+          <p>&#8627; hover over the screen to pick a color from the image</p>
+    
+          <script src="https://gist.github.com/xinemata/f843023cae788c95bc4eb71e1740089d.js"></script>
+          <a href="https://editor.p5js.org/xinxin/sketches/RkoemCNwi"
+            >Source Code</a
+          >
+    
+          <p>
+            Here's another example that uses both set() and get() in a clever way
+            &mdash;
+          </p>
+    
+          <iframe src="https://editor.p5js.org/xinxin/embed/VemrYWnSS"></iframe>
+    
+          <p>
+            As you can see, I've placed the get inside set(), so that everytime
+            set() is executed, it loads get() which finds anoter pixel at a relative
+            position to grab.
+          </p>
+    
+          <script src="https://gist.github.com/xinemata/17a19a9d64e888255066a029fc55a5d1.js"></script>
+    
+          <a href="https://editor.p5js.org/xinxin/sketches/VemrYWnSS"
+            >Source Code</a
+          >
+    
+          <h3>
+            Make a Pointillist Filter
+          </h3>
+    
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/aza-3oZjY4g"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+    
+          <p>
+            Next, let's create an experimental camera that will render the subject
+            as a pointillist portrait. We will combine createCapture() + get() to
+            acheive this effect:
+          </p>
+    
+          <script src="https://gist.github.com/xinemata/3ca981cb874b0fd7deae84f7c9b6f70a.js"></script>
+    
+          <a href="https://editor.p5js.org/xinxin/sketches/iI0d5qWf6"
+            >Source Code</a
+          >
+          <div id="pixel">
+            <h2>
+              loadPixels() and updatePixels()
+            </h2>
+          </div>
+          <p>
+            In the last section we have covered the fact that every pixel contains
+            an array of [R, G, B, A] values. Now we are going to talk about
+            <a href="https://p5js.org/reference/#/p5/pixels">pixels[]</a>, which is
+            another way to <i>write</i> pixel values into your program. Its purpose
+            is identical to set(), however the performance speed is faster, and
+            that's useful for when you need to make a lot of modifications to the
+            pixel array.
+          </p>
+    
+          <h3>
+            Pixel Array
+          </h3>
+    
+          <iframe src="https://editor.p5js.org/xinxin/embed/N0jYFxmDS"></iframe>
+          <p>
+            In this example, we will combine pixel[] and a nested for Loop to create
+            a gradient image as shwon above. But first, you should call
+            <a href="https://p5js.org/reference/#/p5/loadPixels">loadPixels()</a>
+            in the beginning of draw() and
+            <a href="https://p5js.org/reference/#/p5/updatePixels"
+              >updatePixels()</a
+            >
+            at the end of draw(). These functions help loading the displaying the
+            pixels onto the canvas.
+          </p>
+    
+          <script src="https://gist.github.com/xinemata/c6a29744cd013405aaaf31de1232d86f.js"></script>
+    
+          <p>
+            And now here's the fun part. We're going to use a nested for Loop to
+            draw a grid of pixels. And we're going to use <i>let index</i> to count
+            every row of the pixel grid.
+          </p>
+    
+          <script src="https://gist.github.com/xinemata/2d5969cdb26b8662b9d95257cae1bb72.js"></script>
+    
+          <p>
+            If you're confused by what's going on inside the for Loop, here's a
+            thorough
+            <a href="https://www.youtube.com/watch?v=nMUMZ5YRxHI">tutorial</a> that
+            explains what it means.
+          </p>
+          <p>
+            Now if you have a high pixel density display such as a retina screen,
+            when you click on play you will see the pixels only filling part of the
+            screen instead of all of the screen. Because by default, pixel density
+            in p5 is set to match the display density.
+          </p>
+    
+          <div class="full-width-box">
+            <img
+              style="height:200px"
+              src="https://u01.appmifile.com/images/2018/07/11/d90c3f77-3c4b-40b5-b657-40273be7981b.png"
+            />
+          </div>
+    
+          <p>
+            To make the pixel density in p5 adopt to your display density, you would
+            have to set
+            <a href="https://p5js.org/reference/#/p5/pixelDensity"
+              >pixelDensity()</a
+            >
+            to 1:
+          </p>
+    
+          <script src="https://gist.github.com/xinemata/21afd4219d644e0084a74fcfb8ca3c13.js"></script>
+    
+          <a href="https://editor.p5js.org/xinxin/sketches/N0jYFxmDS"
+            >Source Code</a
+          >
+    
+          <h3>
+            Make a Rainbow Gradient Filter 🌈
+          </h3>
+    
+          <p>
+            By combining the pixel array example with createCapture(), you could
+            create a rainbow gradient filter similar to the ones you see in social
+            media apps! I'm also going to intergrate it with
+            <a href="https://p5js.org/reference/#/p5/createSlider">createSlider()</a
+            >, so that the user can adjust the level of redness in the image:
+          </p>
+    
+          <script src="https://gist.github.com/xinemata/72b056c9d1bd9e3184d879237f238b16.js"></script>
+    
+          <a href="https://editor.p5js.org/xinxin/sketches/xSnt8PET1"
+            >Source Code</a
+          >
+    
+          <div id="perf">
+            <h2>
+              Performance Management
+            </h2>
+          </div>
+          <p>
+            There is a benefit that comes along with working on the web, but there
+            is also a limit to how many things the browser is able to handle at a
+            time. Here are a couple tips on working with image processing within the
+            scope of this project &mdash;
+          </p>
+          <ul>
+            <li>
+              (1) Save or duplicate your sketches more frequently than usual. If a
+              progam crashes you might lose your source code.
+            </li>
+    
+            <li>
+              (2) When you're writing a for loop, start from creating a very small
+              number of repetitions and gradually scale up. 3 is a good starting
+              point :)
+            </li>
+    
+            <li>
+              (3) Skip over some of the pixel arrays in the for loop. You don't
+              always need to be drawing every single pixel array. Try skipping by
+              increasing the number of i++ and you could improve your speed
+              significantly.
+            </li>
+    
+            <li>
+              (4) If you're interested in monitoring the speed performance of your
+              sketch, you could integrate
+              <a href="https://github.com/mrdoob/stats.js/">stat.js</a>, which will
+              display the FPS (frame per second) of your browser at the current
+              moment. Here's an
+              <a href="https://editor.p5js.org/xinxin/sketches/zjeoOQO0l"
+                >integrated example</a
+              >.
+            </li>
+    
+            <li>
+              (5) Every medium has a constraint. Even a magician is constrained by
+              their props. Re-evaluate your original idea based on the constraint of
+              our particular medium and ask yourself what is effective. Maybe
+              instead of drawing 200 dots at once, it's just as effective to draw
+              one dot that would swarm around the screen?
+            </li>
+          </ul>
+      </div>
+    </div>
+  </body>
+</html>

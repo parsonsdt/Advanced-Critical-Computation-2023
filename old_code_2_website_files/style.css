@@ -1,0 +1,247 @@
+/* CSS files add styling rules to your content */
+
+@import url("https://fonts.googleapis.com/css?family=Inconsolata");
+
+body {
+  font-family: "Inconsolata", monospace;
+  margin: 2em;
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  color: #373fff;
+  font-size: 18pt;
+}
+
+h2 {
+  font-size: 18pt;
+}
+
+h5{
+  font-size:12pt;
+  background-color:lightyellow;
+}
+
+/* button {
+  font-family: "Inconsolata", monospace;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  width: 100%;
+  /*   text-align: center; */
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 30px 2px;
+  cursor: pointer;
+} */
+
+p {
+  font-size: 12pt;
+  line-height: 20pt;
+}
+
+.left {
+  width: 15%;
+  padding: 1% 1% 1% 0;
+  float: left;
+  display: inline-block;
+  /*   background-color: red; */
+}
+
+.center {
+  width: 15%;
+  padding: 1%;
+  float: left;
+  display: inline-block;
+}
+
+.right {
+  width: 60%;
+  padding: 1%;
+  float: left;
+  display: inline-block;
+}
+
+.nav {
+  position:fixed;
+  padding: 2%;
+  width: 26%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+}
+
+.content {
+  padding: 2%;
+  margin-right:6%;
+  width: 60%;
+  display: inline-block;
+  float: right;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  font-size: 12pt;
+  list-style-type: none;
+  padding-bottom: 1em;
+}
+
+li.bullet {
+  list-style-type: "- ";
+  margin: 1%;
+  padding: 0;
+}
+
+li.bullet a {
+  color: blue;
+}
+
+li a {
+  color: black;
+  /*   text-decoration: none; */
+}
+
+iframe {
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 100%;
+  height: 400px;
+  display: inline-block;
+  float: left;
+  margin-bottom: 2%;
+}
+
+.full-width-box {
+  width: 100%;
+  margin-bottom: 2%;
+  display: inline-block;
+  float: left;
+}
+
+img {
+  height: 300px;
+  display: inline-block;
+  float: left;
+  margin-bottom: 2%;
+  margin-right: 2%;
+}
+
+body .gist .gist-file {
+  margin-bottom: 0;
+  border: 1px dashed #adb5bd;
+  border-radius: 0;
+}
+
+body .gist .gist-data {
+  border-bottom: none;
+  border-radius: 0;
+  background-color: #f1f3f5;
+}
+
+body .gist .blob-wrapper {
+  border-radius: 0;
+}
+
+body .gist .highlight {
+  background-color: transparent;
+  font-family: "Droid Sans Mono", monospace;
+  font-size: 14px;
+}
+
+body .gist .highlight td {
+  padding: 5px 15px !important;
+  line-height: 1;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+body .gist tr:first-child td {
+  padding-top: 15px !important;
+}
+
+body .gist tr:last-child td {
+  padding-bottom: 15px !important;
+}
+
+body .gist .blob-num {
+  color: #ced4da;
+  background-color: #495057;
+  pointer-events: none;
+}
+
+body .gist .gist-meta {
+  display: none;
+}
+
+.nav-link {
+  font-size: 18px;
+  line-height: 27px;
+  cursor: pointer;
+}
+.nav-link a,
+.nav-link a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+#toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-family: "Inconsolata", monospace;
+    margin: 1%;
+    width: 98%;
+    height: 100%;
+  }
+  .nav {
+    position:relative;
+    width: 100%;
+  }
+  .content {
+    width: 100%;
+    float: left;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+canvas {
+  display: block;
+}
+
+#p5pos{
+  width:100%;
+  float:right;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+/*   background-color: #2196F3; */
+/*   padding: 10px; */
+}
+
+.grid-item {
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+img.profile{
+  width:100%;
+  height: 200px;
+}

@@ -1,4 +1,4 @@
-# Advanced Advanced Critical Computation 2022
+# Advanced Advanced Critical Computation 2023
 
 This is the [website](https://parsonsdt.github.io/Advanced-Critical-Computation-2022/) for Advanced Critical Computation, an undergraduate course at Parsons Design & Technology at the New School.
 

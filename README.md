@@ -1,13 +1,14 @@
 # Advanced Advanced Critical Computation 2023
 
-This is the [website](https://parsonsdt.github.io/Advanced-Critical-Computation-2022/) for Advanced Critical Computation, an undergraduate course at Parsons Design & Technology at the New School.
+This is the [website](https://advanced-critical-computation-23.glitch.me/index.html) for Advanced Critical Computation, an undergraduate course at Parsons Design & Technology at the New School.
 
 
 ### Faculty
 
-- [Aarati Akkapeddi](https://github.com/AaratiAkkapeddi) (they/them)
-- [Elizabeth Pérez](https://github.com/brujadev) (she/her)
-- [Kevin Cadena](https://github.com/stayclassyinfo) (he/him)
+- [Regina Flores](florr422@newschool.edu ) (she/her)
+- [Lai Yi Ohlsen](ohlsenl@newschool.edu) (she/her)
+- [Gabriel-Lee Dekoladenu](dekog666@newschool.edu) (he/him)
+- [Morgan Mueller](muelm658@newschool.edu) (he/him)
 
 ## Course Descriptions
 
